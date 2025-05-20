@@ -1,7 +1,6 @@
 import reflex as rx
 
-import my_app_web.Styles.styles as styles
-from my_app_web.Styles.styles import TextColor, Size, FLEX_DIRECTION
+from my_app_web.Styles.styles import Size, FLEX_DIRECTION
 
 
 def imagen_box():
@@ -28,7 +27,7 @@ def contenido_box():
     return rx.box(
         rx.text("Tradicional platillo mexicano hecho con chiles poblanos rellenos, capeados y bañados en salsa. Su sabor ahumado y relleno jugoso los hace irresistibles."),
 
-        rx.heading("Ingredientes:", margin_top="2em",
+        rx.heading("Ingredientes:", margin_top="4em",
                    font_size=Size.DEFAULT.value),
         rx.text("- 4 chiles poblanos grandes."),
         rx.text("- 200 g de queso Oaxaca o panela."),
@@ -39,7 +38,7 @@ def contenido_box():
         rx.text("- Sal al gusto."),
 
 
-        rx.heading("Preparación:", margin_top="2em",
+        rx.heading("Preparación:", margin_top="4em",
                    font_size=Size.DEFAULT.value),
         rx.text("1. Asa los chiles sobre fuego directo hasta que la piel esté negra."),
         rx.text(
@@ -48,14 +47,13 @@ def contenido_box():
         rx.text("4. Rellena con queso."),
         rx.text(
             "5. Bate las claras a punto de nieve, añade las yemas y mezcla suavemente"),
-        rx.text("6. Pasa los chiles ;or harina, luego por el huevo batido."),
+        rx.text("6. Pasa los chiles por harina, luego por el huevo batido."),
         rx.text("7. Fríe en aceite caliente hasta dorar."),
         rx.text("Escúrrelos sobre papel absorbente"),
 
 
 
-
-        rx.heading("Tabla nutricional", margin_top="2em",
+        rx.heading("Tabla nutricional", margin_top="4em",
                    font_size=Size.DEFAULT.value),
         rx.box(
             rx.html("""
@@ -80,14 +78,14 @@ def contenido_box():
             margin_top="2em",
         ),
 
-        rx.heading("Información adicional:", margin_top="2em",
+        rx.heading("Información adicional:", margin_top="4em",
                    font_size=Size.DEFAULT.value),
         rx.text("⏱️ Tiempo de preparación: 30 minutos"),
-        rx.text("🔥 Tiempo de cocción: 15 minutoa"),
+        rx.text("🔥 Tiempo de cocción: 15 minutos"),
         rx.text("🍽️ Rinde para: 4 porciones"),
         rx.text("⭐ Dificultad: Media"),
 
-        rx.heading("Consejos de cocina:", margin_top="1.5em",
+        rx.heading("Consejos de cocina:", margin_top="2em",
                    font_size=Size.DEFAULT.value),
         rx.text("✔️ Puedes rellenarlos también con picadillo."),
         rx.text(
@@ -95,7 +93,7 @@ def contenido_box():
         rx.text("✔️ Sirve con salsa de jitomate casera caliente."),
 
 
-        rx.heading("Acompañamientos sugeridos:", margin_top="2em",
+        rx.heading("Acompañamientos sugeridos:", margin_top="4em",
                    font_size=Size.DEFAULT.value),
         rx.text("🌾 Arroz a la mexicana"),
         rx.text("🥗 Ensalada de lechuga con jitomate"),
@@ -144,7 +142,7 @@ def receta5() -> rx.Component:
         rx.vstack(
             rx.heading(
                 "Chiles Rellenos",
-                size="lg",
+                font_size=Size.MED.value,
                 text_align="center",
                 width="100%"
             ),
@@ -160,7 +158,7 @@ def receta5() -> rx.Component:
             ),
             padding_y="2em",
             padding_x="1em",
-            spacing="2em",
+            spacing="8",
             max_width="1200px",
             width="100%"
         )

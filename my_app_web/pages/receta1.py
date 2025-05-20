@@ -1,7 +1,6 @@
 import reflex as rx
 
-import my_app_web.Styles.styles as styles
-from my_app_web.Styles.styles import TextColor, Size, FLEX_DIRECTION
+from my_app_web.Styles.styles import Size, FLEX_DIRECTION
 
 
 def imagen_box():
@@ -28,7 +27,8 @@ def contenido_box():
     return rx.box(
         rx.text("El guacamole es una salsa mexicana cremosa y fresca a base de aguacate, perfecta para acompañar tacos, totopos o como botana."),
 
-        rx.heading("Ingredientes:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Ingredientes:", margin_top="4em",
+                   font_size=Size.DEFAULT.value),
         rx.text("- 2 aguacates maduros"),
         rx.text("- 1 tomate (jitomate) picado en cubos pequeños"),
         rx.text("- 1/4 de cebolla picada finamente"),
@@ -37,14 +37,17 @@ def contenido_box():
         rx.text("- Sal al gusto"),
         rx.text("- Cilantro picado al gusto (opcional)"),
 
-        rx.heading("Preparación:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Preparación:", margin_top="4em",
+                   font_size=Size.DEFAULT.value),
         rx.text("1. Parte los aguacates, retira la semilla y extrae la pulpa."),
-        rx.text("2. Tritura el aguacate con un tenedor hasta obtener una textura cremosa."),
+        rx.text(
+            "2. Tritura el aguacate con un tenedor hasta obtener una textura cremosa."),
         rx.text("3. Añade el tomate, la cebolla, el chile, el jugo de limón y la sal."),
         rx.text("4. Mezcla todo suavemente y, si deseas, incorpora el cilantro."),
         rx.text("5. Sirve inmediatamente para evitar la oxidación."),
 
-        rx.heading("Tabla nutricional:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Tabla nutricional:", margin_top="4em",
+                   font_size=Size.DEFAULT.value),
         rx.box(
             rx.html("""
                 <div class="nes-table-responsive" style="margin-top:1em;">
@@ -68,17 +71,20 @@ def contenido_box():
             margin_top="2em",
         ),
 
-        rx.heading("Información adicional:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Información adicional:", margin_top="4em",
+                   font_size=Size.DEFAULT.value),
         rx.text("⏱️ Tiempo de preparación: 10 minutos"),
         rx.text("🍽️ Rinde para: 4 porciones"),
         rx.text("⭐ Dificultad: Muy fácil"),
 
-        rx.heading("Consejos de cocina:", margin_top="1.5em", font_size=Size.DEFAULT.value),
+        rx.heading("Consejos de cocina:", margin_top="2em",
+                   font_size=Size.DEFAULT.value),
         rx.text("✔️ Usa aguacates maduros pero firmes para mejor textura."),
         rx.text("✔️ Si no vas a servirlo de inmediato, cubre el guacamole con plástico directamente sobre la superficie para evitar que se oxide."),
         rx.text("✔️ Ajusta el picante al gusto."),
 
-        rx.heading("Acompañamientos sugeridos:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Acompañamientos sugeridos:", margin_top="4em",
+                   font_size=Size.DEFAULT.value),
         rx.text("Sirve con totopos, tacos, carne asada o como aderezo junto a una bebida fresca como agua de limón o jamaica."),
 
         rx.box(
@@ -99,7 +105,7 @@ def contenido_box():
         ),
 
         rx.hstack(
-            
+
             rx.html(
                 '<a href="/" class="nes-btn is-success" style="padding: 1em 2em;">Menú Principal</a>'),
             rx.html(
@@ -121,8 +127,7 @@ def receta1() -> rx.Component:
         rx.vstack(
             rx.heading(
                 "Guacamole Casero",
-                size="lg",
-                text_align="center",
+                font_size=Size.MED.value,
                 width="100%"
             ),
             rx.box(
@@ -137,7 +142,7 @@ def receta1() -> rx.Component:
             ),
             padding_y="2em",
             padding_x="1em",
-            spacing="2em",
+            spacing="8",
             max_width="1200px",
             width="100%"
         )

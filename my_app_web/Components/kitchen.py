@@ -10,17 +10,15 @@ def kitchen() -> rx.Component:
                 rx.box(
                     rx.el.span("Proyecto "),
                     rx.el.span("en GitHub"),
-                    class_name="nes-balloon from-right ",
+                    class_name="nes-balloon from-right",
                     margin_bottom=Size.BIG.value,
+                    margin_top=Size.VERY_BIG.value
                 ),
                 rx.el.span(
                     rx.el.span(constants.VERSION, class_name="is-error"),
                     class_name="nes-badge",
-                    font_size=Size.MEDIUM.value
-
-
+                    style={"fontSize": Size.MEDIUM.value},  # Cambio aquí
                 ),
-
             ),
             rx.box(
                 class_name="nes-octocat animate"

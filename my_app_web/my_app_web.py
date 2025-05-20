@@ -92,7 +92,7 @@ def index() -> rx.Component:
                 footer(),
                 kitchen(),
                 width="100%",
-                spacing=Size.VERY_BIG.value
+                spacing="4"
             )
         )
     )

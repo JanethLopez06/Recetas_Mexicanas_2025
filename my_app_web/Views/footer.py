@@ -9,17 +9,18 @@ def footer() -> rx.Component:
         rx.flex(
             rx.vstack(  # Contenido textual a la izquierda
                 rx.text(
-                    "Recetas de Cocina Mexicana 2025.",
+                    "Sazón Mexicano 2025.",
                     font_size=Size.MED.value,
                     margin_bottom=Size.ZERO.value,
-                    text_align="center"
+                    text_align="center",
+                    margin_top=Size.DEFAULT.value
                 ),
                 rx.link(
                     rx.hstack(
                         rx.text("Creado  "),
                         rx.el.i(class_name="nes-icon is-small heart"),
                         rx.text(" por Jessica López © 2025"),
-                        spacing=Size.SMALL.value,
+                        spacing="2",
                         align_items="center"
                     ),
                     href=constants.JESSICA_URL,
@@ -27,14 +28,14 @@ def footer() -> rx.Component:
                     font_size=Size.MEDIUM.value,
                     color=TextColor.TERCIARY.value
                 ),
-                spacing=Size.SMALL.value,
+                spacing="2",
                 align_items="center"
             ),
             rx.image(  # Imagen a la derecha
                 src="/logo.png",
                 alt="Logo de cocina mexicana",
                 class_name="nes-avatar is-large",
-                margin_left=Size.DEFAULT.value
+                margin_left=Size.MEDIUM.value
             ),
             align_items="center",
             justify_content="center",

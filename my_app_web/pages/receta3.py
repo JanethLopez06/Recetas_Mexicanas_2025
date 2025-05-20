@@ -1,7 +1,6 @@
 import reflex as rx
 
-import my_app_web.Styles.styles as styles
-from my_app_web.Styles.styles import TextColor, Size, FLEX_DIRECTION
+from my_app_web.Styles.styles import  Size, FLEX_DIRECTION
 
 
 def imagen_box():
@@ -30,7 +29,7 @@ def contenido_box():
         rx.text(
             "¡Una delicia tradicional hecha con masa de maíz, frijoles y toppings al gusto!"),
 
-        rx.heading("Ingredientes:", margin_top="2em",
+        rx.heading("Ingredientes:", margin_top="4em",
                    font_size=Size.DEFAULT.value),
         rx.text("- 2 tazas de masa de maíz"),
         rx.text("- 1/2 taza de frijoles refritos"),
@@ -38,14 +37,14 @@ def contenido_box():
         rx.text("- Crema, queso fresco, salsa y cebolla"),
         rx.text("- Aceite para freír"),
 
-        rx.heading("Preparación:", margin_top="2em",
+        rx.heading("Preparación:", margin_top="4em",
                    font_size=Size.DEFAULT.value),
         rx.text("1. Forma círculos con la masa y cocínalos en comal."),
         rx.text("2. Pellizca las orillas para formar los bordes."),
         rx.text("3. Fríelos ligeramente para dar textura."),
         rx.text("4. Unta frijoles y añade los ingredientes al gusto."),
 
-        rx.heading("Tabla nutricional:", margin_top="2em",
+        rx.heading("Tabla nutricional:", margin_top="4em",
                    font_size=Size.DEFAULT.value),
         rx.box(
             rx.html("""
@@ -70,21 +69,21 @@ def contenido_box():
             margin_top="2em",  # Margen superior para separación
         ),
 
-        rx.heading("Información adicional:", margin_top="2em",
+        rx.heading("Información adicional:", margin_top="4em",
                    font_size=Size.DEFAULT.value),
         rx.text("⏱️ Tiempo de preparación: 20 minutos"),
         rx.text("🔥 Tiempo de cocción: 10 minutos"),
         rx.text("🍽️ Rinde para: 4 porciones"),
         rx.text("⭐ Dificultad: Fácil"),
 
-        rx.heading("Consejos de cocina:", margin_top="1.5em",
+        rx.heading("Consejos de cocina:", margin_top="2em",
                    font_size=Size.DEFAULT.value),
         rx.text("✔️ Si la masa está muy seca, puedes agregarle un poco de agua tibia."),
         rx.text("✔️ Usa un comal bien caliente para que los sopes se cocinen parejo."),
         rx.text(
             "✔️ Para un toque más crujiente, fríe ligeramente después de cocer en el comal."),
 
-        rx.heading("Acompañamientos sugeridos:", margin_top="2em",
+        rx.heading("Acompañamientos sugeridos:", margin_top="4em",
                    font_size=Size.DEFAULT.value),
         rx.text("Para complementar estos deliciosos sopes, puedes servirlos con una rica agua de jamaica, "
                 "un poco de arroz rojo o una salsa verde picante casera."),
@@ -131,7 +130,7 @@ def receta3() -> rx.Component:
         rx.vstack(
             rx.heading(
                 "Sopes Mexicanos",
-                size="lg",
+                font_size=Size.MED.value,
                 text_align="center",
                 width="100%"  # ✅ Centrado correcto
             ),
@@ -149,7 +148,7 @@ def receta3() -> rx.Component:
 
             padding_y="2em",
             padding_x="1em",  # ✅ Margen horizontal para móviles
-            spacing="2em",
+            spacing="8",
             max_width="1200px",
             width="100%"
         )

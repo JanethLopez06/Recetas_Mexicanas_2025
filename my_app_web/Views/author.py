@@ -1,26 +1,24 @@
 import reflex as rx
-import my_app_web.constants as constants
 import my_app_web.Styles.styles as styles
-from my_app_web.Styles.styles import Size, Color, TextColor
+from my_app_web.Styles.styles import Size, Color, TextColor, HeadingSize
 # Importar la función header_text
 from my_app_web.Components.header_text import header_text
-from my_app_web.Components.button import button  # Si es necesario
 
 
 def author() -> rx.Component:
     return rx.center(
         rx.vstack(
             header_text(
-                icon="like", 
+                icon="like",
                 text="Hola, mi nombre es Jessica López",
                 color=TextColor.ACCENT.value,
-                font_size=Size.DEFAULT.value
-                
-                
+                font_size=HeadingSize.BIG
+
+
             ),
             rx.flex(
                 rx.image(
-                    
+
                     src="/Jessica.png",
 
                     width="220px",
@@ -37,21 +35,21 @@ def author() -> rx.Component:
                     rx.text("• Esta página nació como un espacio para compartir sabores, historias y trucos que he aprendido con el tiempo. Me encanta crear platillos sencillos pero llenos de sabor, perfectos para quienes quieren cocinar sin complicaciones y con ingredientes accesibles."),
                     rx.text("• Aquí encontrarás recetas de toda la vida, ideas fáciles para el día a día y un toque retro porque... ¡me encanta el estilo pixelado y los colores brillantes!"),
                     font_size=Size.MEDIUM.value,
-                    spacing="4",  # Espacio vertical entre cada línea
+                    spacing="6",  # Espacio vertical entre cada línea
                     align_items="start",
 
 
                 ),
-                spacing=Size.DEFAULT.value,
+                spacing="8",
                 align_items="center",
                 justify="center",
                 flex_direction=styles.FLEX_DIRECTION,
                 width="auto"  # ❗ Cambiado de "100%" a "auto"
             ),
             align_items="center",
-            spacing=Size.BIG.value,
+            spacing="8",
             style={**styles.MAX_WIDTH_style, "margin": "0 auto"},
 
         ),
-        width="100%"
+        width="100%",
     )

@@ -1,6 +1,5 @@
 import reflex as rx
-import my_app_web.Styles.styles as styles
-from my_app_web.Styles.styles import TextColor, Size, FLEX_DIRECTION
+from my_app_web.Styles.styles import  Size, FLEX_DIRECTION
 
 def imagen_box():
     return rx.box(
@@ -25,21 +24,21 @@ def contenido_box():
     return rx.box(
         rx.text("El flan napolitano es un postre clásico y cremoso con un delicioso sabor a vainilla y caramelo, perfecto para cualquier ocasión."),
 
-        rx.heading("Ingredientes:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Ingredientes:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("- 1 lata de leche condensada."),
         rx.text("- 1 lata de leche evaporada."),
         rx.text("- 4 huevos."),
         rx.text("- 1 cucharada de extracto de vainilla."),
         rx.text("- 1/2 taza de azúcar para el caramelo."),
 
-        rx.heading("Preparación:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Preparación:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("1. Preparar el caramelo: Calienta el azúcar en una sartén hasta que se derrita y tome color dorado. Vierte en un molde para flan."),
         rx.text("2. Licuar los ingredientes: Mezcla la leche condensada, leche evaporada, huevos y vainilla hasta obtener una mezcla homogénea."),
         rx.text("3. Verter en el molde: Coloca la mezcla sobre el caramelo en el molde."),
         rx.text("4. Cocinar: Hornea a baño maría a 180°C por 50-60 minutos o hasta que al insertar un palillo, este salga limpio."),
         rx.text("5. Enfriar: Deja enfriar completamente y refrigera antes de desmoldar."),
 
-        rx.heading("Tabla nutricional", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Tabla nutricional", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.box(
             rx.html("""
                 <div class=\"nes-table-responsive\" style=\"margin-top:1em;\">
@@ -61,13 +60,13 @@ def contenido_box():
             margin_top="2em",
         ),
 
-        rx.heading("Información adicional:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Información adicional:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("⏱️ Tiempo de preparación: 15 minutos"),
         rx.text("🔥 Tiempo de cocción: 60 minutos"),
         rx.text("🍽️ Rinde para: 8 porciones"),
         rx.text("⭐ Dificultad: Media"),
 
-        rx.heading("Consejos de cocina:", margin_top="1.5em", font_size=Size.DEFAULT.value),
+        rx.heading("Consejos de cocina:", margin_top="2em", font_size=Size.DEFAULT.value),
         rx.text("✔️ Asegúrate de que el caramelo no se queme para evitar un sabor amargo."),
         rx.text("✔️ Puedes agregar queso crema a la mezcla para una textura más rica."),
         rx.text("✔️ Usa moldes individuales para porciones más elegantes."),
@@ -110,7 +109,7 @@ def receta22() -> rx.Component:
         rx.vstack(
             rx.heading(
                 "Flan Napolitano",
-                size="lg",
+                font_size=Size.MED.value,
                 text_align="center",
                 width="100%"
             ),
@@ -126,7 +125,7 @@ def receta22() -> rx.Component:
             ),
             padding_y="2em",
             padding_x="1em",
-            spacing="2em",
+            spacing="8",
             max_width="1200px",
             width="100%"
         )

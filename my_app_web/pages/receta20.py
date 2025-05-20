@@ -1,6 +1,5 @@
 import reflex as rx
-import my_app_web.Styles.styles as styles
-from my_app_web.Styles.styles import TextColor, Size, FLEX_DIRECTION
+from my_app_web.Styles.styles import  Size, FLEX_DIRECTION
 
 def imagen_box():
     return rx.box(
@@ -25,20 +24,20 @@ def contenido_box():
     return rx.box(
         rx.text("La gelatina de mosaico es un postre colorido y divertido hecho con cubos de gelatina de sabores mezclados en una base de gelatina con leche."),
 
-        rx.heading("Ingredientes:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Ingredientes:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("- 3 sobres de gelatina de diferentes sabores (fresa, limón, uva)."),
         rx.text("- 1 lata de leche condensada."),
         rx.text("- 1 lata de leche evaporada."),
         rx.text("- 1 taza de agua caliente."),
         rx.text("- 2 sobres de grenetina natural."),
 
-        rx.heading("Preparación:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Preparación:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("1. Preparar las gelatinas de sabores según las instrucciones del paquete y dejar cuajar en moldes planos. Luego cortar en cubos."),
         rx.text("2. Disolver la grenetina en el agua caliente y dejar enfriar un poco."),
         rx.text("3. Mezclar la leche condensada, leche evaporada y la grenetina disuelta."),
         rx.text("4. Colocar los cubos de gelatina en un molde grande y verter la mezcla de leche. Refrigerar hasta que cuaje."),
 
-        rx.heading("Tabla nutricional", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Tabla nutricional", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.box(
             rx.html("""
                 <div class=\"nes-table-responsive\" style=\"margin-top:1em;\">
@@ -60,13 +59,13 @@ def contenido_box():
             margin_top="2em",
         ),
 
-        rx.heading("Información adicional:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Información adicional:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("⏱️ Tiempo de preparación: 20 minutos (+ tiempo de refrigeración)"),
         rx.text("🔥 Tiempo de cocción: 0 minutos"),
         rx.text("🍽️ Rinde para: 8 porciones"),
         rx.text("⭐ Dificultad: Fácil"),
 
-        rx.heading("Consejos de cocina:", margin_top="1.5em", font_size=Size.DEFAULT.value),
+        rx.heading("Consejos de cocina:", margin_top="2em", font_size=Size.DEFAULT.value),
         rx.text("✔️ Usa moldes de silicona para facilitar el desmolde."),
         rx.text("✔️ Asegúrate de que la mezcla de leche esté fría antes de verter sobre los cubos de gelatina."),
         rx.text("✔️ Puedes agregar esencia de vainilla para más sabor."),
@@ -109,7 +108,7 @@ def receta20() -> rx.Component:
         rx.vstack(
             rx.heading(
                 "Gelatina de Mosaico",
-                size="lg",
+                font_size=Size.MED.value,
                 text_align="center",
                 width="100%"
             ),
@@ -125,7 +124,7 @@ def receta20() -> rx.Component:
             ),
             padding_y="2em",
             padding_x="1em",
-            spacing="2em",
+            spacing="8",
             max_width="1200px",
             width="100%"
         )

@@ -1,6 +1,5 @@
 import reflex as rx
-import my_app_web.Styles.styles as styles
-from my_app_web.Styles.styles import TextColor, Size, FLEX_DIRECTION
+from my_app_web.Styles.styles import  Size, FLEX_DIRECTION
 
 def imagen_box():
     return rx.box(
@@ -26,7 +25,7 @@ def contenido_box():
     return rx.box(
         rx.text("La birria de res es un platillo tradicional mexicano, originario de Jalisco, preparado con carne de res cocida en un guiso de chiles y especias."),
 
-        rx.heading("Ingredientes:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Ingredientes:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("- 1 kg de carne de res (chuck roast o espaldilla)."),
         rx.text("- 4 chiles guajillos secos."),
         rx.text("- 2 chiles anchos secos."),
@@ -39,13 +38,13 @@ def contenido_box():
         rx.text("- 1/4 de taza de vinagre de manzana."),
         rx.text("- 1/2 taza de caldo de res."),
 
-        rx.heading("Preparación:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Preparación:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("1. Preparar la salsa: Hidrata los chiles guajillo y ancho en agua caliente. Licúa con el ajo, cebolla, vinagre, canela y clavos hasta obtener una salsa suave."),
         rx.text("2. Cocinar la carne: En una olla grande, coloca la carne, la salsa y el caldo de res. Cocina a fuego lento por 2-3 horas hasta que la carne esté tierna."),
         rx.text("3. Desmenuzar la carne: Una vez cocida, desmenuza la carne y sirve en un plato hondo con un poco del caldo."),
         rx.text("4. Servir: Acompaña con cebolla picada, cilantro y limones. Puedes comerla con tortillas o en tacos."),
 
-        rx.heading("Tabla nutricional", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Tabla nutricional", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.box(
             rx.html("""
                 <div class="nes-table-responsive" style="margin-top:1em;">
@@ -69,18 +68,18 @@ def contenido_box():
             margin_top="2em",
         ),
 
-        rx.heading("Información adicional:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Información adicional:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("⏱️ Tiempo de preparación: 20 minutos"),
         rx.text("🔥 Tiempo de cocción: 3 horas"),
         rx.text("🍽️ Rinde para: 6-8 porciones"),
         rx.text("⭐ Dificultad: Media"),
 
-        rx.heading("Consejos de cocina:", margin_top="1.5em", font_size=Size.DEFAULT.value),
+        rx.heading("Consejos de cocina:", margin_top="2em", font_size=Size.DEFAULT.value),
         rx.text("✔️ Puedes acompañar la birria con arroz o frijoles."),
         rx.text("✔️ Si prefieres un toque más picante, añade un chile de árbol al guiso."),
         rx.text("✔️ Puedes hacer birria en cazuela de barro para un sabor más auténtico."),
 
-        rx.heading("Acompañamientos sugeridos:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Acompañamientos sugeridos:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("🌮 Tacos de birria"),
         rx.text("🍞 Pan de elote"),
         rx.text("🥑 Guacamole"),
@@ -127,7 +126,7 @@ def receta16() -> rx.Component:
         rx.vstack(
             rx.heading(
                 "Birria de Res",
-                size="lg",
+                font_size=Size.MED.value,
                 text_align="center",
                 width="100%"
             ),
@@ -143,7 +142,7 @@ def receta16() -> rx.Component:
             ),
             padding_y="2em",
             padding_x="1em",
-            spacing="2em",
+            spacing="8",
             max_width="1200px",
             width="100%"
         )

@@ -1,7 +1,6 @@
 import reflex as rx
 
-import my_app_web.Styles.styles as styles
-from my_app_web.Styles.styles import TextColor, Size, FLEX_DIRECTION
+from my_app_web.Styles.styles import  Size, FLEX_DIRECTION
 
 
 def imagen_box():
@@ -28,7 +27,7 @@ def contenido_box():
     return rx.box(
         rx.text("Clásico arroz rojo preparado con jitomate, ajo y cebolla, ideal como guarnición para platillos mexicanos."),
 
-        rx.heading("Ingredientes:", margin_top="2em",font_size=Size.DEFAULT.value),
+        rx.heading("Ingredientes:", margin_top="4em",font_size=Size.DEFAULT.value),
         rx.text("- 1 taza de arroz blanco."),
         rx.text("- 2 jitomates maduros"),
         rx.text("- 1/4 de cebolla."),
@@ -39,7 +38,7 @@ def contenido_box():
         rx.text("- Sal al gusto."),
 
 
-        rx.heading("Preparación:", margin_top="2em",
+        rx.heading("Preparación:", margin_top="4em",
                    font_size=Size.DEFAULT.value),
         rx.text("1. Enjuaga el arroz bajo agua fría hasta que salga clara."),
         rx.text(
@@ -52,7 +51,7 @@ def contenido_box():
     
 
 
-        rx.heading("Tabla nutricional", margin_top="2em",
+        rx.heading("Tabla nutricional", margin_top="4em",
                    font_size=Size.DEFAULT.value),
         rx.box(
             rx.html("""
@@ -77,14 +76,14 @@ def contenido_box():
             margin_top="2em",
         ),
 
-        rx.heading("Información adicional:", margin_top="2em",
+        rx.heading("Información adicional:", margin_top="4em",
                    font_size=Size.DEFAULT.value),
         rx.text("⏱️ Tiempo de preparación: 10 minutos"),
         rx.text("🔥 Tiempo de cocción: 20 minutos"),
         rx.text("🍽️ Rinde para: 4 porciones"),
         rx.text("⭐ Dificultad: Fácil"),
 
-        rx.heading("Consejos de cocina:", margin_top="1.5em",
+        rx.heading("Consejos de cocina:", margin_top="2em",
                    font_size=Size.DEFAULT.value),
         rx.text("✔️ Usa caldo de pollo para más sabor."),
         rx.text(
@@ -92,7 +91,7 @@ def contenido_box():
         rx.text("✔️ Si prefieres, agrégale elote o pimiento en cubos."),
 
 
-        rx.heading("Acompañamientos sugeridos:", margin_top="2em",
+        rx.heading("Acompañamientos sugeridos:", margin_top="4em",
                    font_size=Size.DEFAULT.value),
         rx.text("🌶️ Chiles rellenos."),
         rx.text("🍗 Pollo en mole."),
@@ -141,7 +140,7 @@ def receta6() -> rx.Component:
         rx.vstack(
             rx.heading(
                 "Arroz a la Mexicana",
-                size="lg",
+                font_size=Size.MED.value,
                 text_align="center",
                 width="100%"
             ),
@@ -157,7 +156,7 @@ def receta6() -> rx.Component:
             ),
             padding_y="2em",
             padding_x="1em",
-            spacing="2em",
+            spacing="8",
             max_width="1200px",
             width="100%"
         )

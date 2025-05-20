@@ -1,6 +1,5 @@
 import reflex as rx
-import my_app_web.Styles.styles as styles
-from my_app_web.Styles.styles import TextColor, Size, FLEX_DIRECTION
+from my_app_web.Styles.styles import  Size, FLEX_DIRECTION
 
 
 def imagen_box():
@@ -27,7 +26,7 @@ def contenido_box():
     return rx.box(
         rx.text("El arroz con leche es un postre tradicional cremoso y dulce preparado con arroz, leche, azúcar y canela."),
 
-        rx.heading("Ingredientes:", margin_top="2em",
+        rx.heading("Ingredientes:", margin_top="4em",
                    font_size=Size.DEFAULT.value),
         rx.text("- 1 taza de arroz blanco."),
         rx.text("- 4 tazas de leche entera."),
@@ -37,7 +36,7 @@ def contenido_box():
         rx.text("- 1 cucharadita de esencia de vainilla (opcional)."),
         rx.text("- Canela en polvo para decorar."),
 
-        rx.heading("Preparación:", margin_top="2em",
+        rx.heading("Preparación:", margin_top="4em",
                    font_size=Size.DEFAULT.value),
         rx.text("1. Hervir el arroz: Cocina el arroz con el agua y la rama de canela hasta que el agua se absorba."),
         rx.text(
@@ -46,7 +45,7 @@ def contenido_box():
             "3. Endulzar: Agrega la leche condensada y la vainilla. Cocina hasta que espese un poco."),
         rx.text("4. Servir: Deja enfriar y espolvorea con canela antes de servir."),
 
-        rx.heading("Tabla nutricional", margin_top="2em",
+        rx.heading("Tabla nutricional", margin_top="4em",
                    font_size=Size.DEFAULT.value),
         rx.box(
             rx.html("""
@@ -69,14 +68,14 @@ def contenido_box():
             margin_top="2em",
         ),
 
-        rx.heading("Información adicional:", margin_top="2em",
+        rx.heading("Información adicional:", margin_top="4em",
                    font_size=Size.DEFAULT.value),
         rx.text("⏱️ Tiempo de preparación: 10 minutos"),
         rx.text("🔥 Tiempo de cocción: 30 minutos"),
         rx.text("🍽️ Rinde para: 6 porciones"),
         rx.text("⭐ Dificultad: Fácil"),
 
-        rx.heading("Consejos de cocina:", margin_top="1.5em",
+        rx.heading("Consejos de cocina:", margin_top="2em",
                    font_size=Size.DEFAULT.value),
         rx.text("✔️ Usa leche entera para una textura más cremosa."),
         rx.text("✔️ Remueve constantemente para evitar que se pegue."),
@@ -124,7 +123,7 @@ def receta19() -> rx.Component:
         rx.vstack(
             rx.heading(
                 "Arroz con Leche",
-                size="lg",
+                font_size=Size.MED.value,
                 text_align="center",
                 width="100%"
             ),
@@ -140,7 +139,7 @@ def receta19() -> rx.Component:
             ),
             padding_y="2em",
             padding_x="1em",
-            spacing="2em",
+            spacing="8",
             max_width="1200px",
             width="100%"
         )

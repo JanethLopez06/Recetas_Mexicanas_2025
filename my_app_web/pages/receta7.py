@@ -1,7 +1,6 @@
 import reflex as rx
 
-import my_app_web.Styles.styles as styles
-from my_app_web.Styles.styles import TextColor, Size, FLEX_DIRECTION
+from my_app_web.Styles.styles import  Size, FLEX_DIRECTION
 
 
 def imagen_box():
@@ -28,7 +27,7 @@ def contenido_box():
     return rx.box(
         rx.text("Las quesadillas fritas son una deliciosa botana mexicana, hechas con tortillas de maíz rellenas de queso y otros ingredientes, que se fríen hasta dorarse y quedar crujientes. Son perfectas para acompañar con salsa y crema."),
 
-        rx.heading("Ingredientes:", margin_top="2em",font_size=Size.DEFAULT.value),
+        rx.heading("Ingredientes:", margin_top="4em",font_size=Size.DEFAULT.value),
         rx.text("- 10 tortillas de maíz."),
         rx.text("- 250 g de queso Oaxaca (o cualquier queso rallado de tu preferencia)."),
         rx.text("- 1/2 taza de frijoles refritos (opcional)."),
@@ -39,7 +38,7 @@ def contenido_box():
 
 
 
-        rx.heading("Preparación:", margin_top="2em",font_size=Size.DEFAULT.value),
+        rx.heading("Preparación:", margin_top="4em",font_size=Size.DEFAULT.value),
         rx.text("1. Preparar las tortillas: Calienta las tortillas ligeramente en un comal o sartén, solo para que se suavicen un poco y sean fáciles de doblar."),
         rx.text("2. Rellenar las quesadillas: Coloca una pequeña cantidad de queso en el centro de cada tortilla. Si deseas, agrega frijoles refritos antes de agregar el queso."),
         rx.text("3. Cerrar las quesadillas: Doble las tortillas por la mitad, formando una media luna, asegurándote de que el queso quede bien cubierto."),
@@ -48,7 +47,7 @@ def contenido_box():
         rx.text("6. Servir: Sirve las quesadillas calientes, acompañadas de salsa, crema y, si lo deseas, un poco de guacamole."),
 
 
-        rx.heading("Tabla nutricional", margin_top="2em",
+        rx.heading("Tabla nutricional", margin_top="4em",
                    font_size=Size.DEFAULT.value),
         rx.box(
             rx.html("""
@@ -73,14 +72,14 @@ def contenido_box():
             margin_top="2em",
         ),
 
-        rx.heading("Información adicional:", margin_top="2em",
+        rx.heading("Información adicional:", margin_top="4em",
                    font_size=Size.DEFAULT.value),
         rx.text("⏱️ Tiempo de preparación: 15 minutos"),
         rx.text("🔥 Tiempo de cocción: 10 minutos"),
         rx.text("🍽️ Rinde para: 4 porciones"),
         rx.text("⭐ Dificultad: Fácil"),
 
-        rx.heading("Consejos de cocina:", margin_top="1.5em",
+        rx.heading("Consejos de cocina:", margin_top="2em",
                    font_size=Size.DEFAULT.value),
        rx.text("✔️ Usa queso fresco para un mejor sabor y textura."),
        rx.text("✔️ Si prefieres una opción más saludable, puedes hornear las quesadillas en lugar de freírlas."),
@@ -89,7 +88,7 @@ def contenido_box():
 
 
 
-        rx.heading("Acompañamientos sugeridos:", margin_top="2em",
+        rx.heading("Acompañamientos sugeridos:", margin_top="4em",
                    font_size=Size.DEFAULT.value),
         rx.text("🌶️ Salsa roja o verde"),
         rx.text("🥑 Guacamole"),
@@ -140,7 +139,7 @@ def receta7() -> rx.Component:
         rx.vstack(
             rx.heading(
                 "Quesadillas Fritas",
-                size="lg",
+                font_size=Size.MED.value,
                 text_align="center",
                 width="100%"
             ),
@@ -156,7 +155,7 @@ def receta7() -> rx.Component:
             ),
             padding_y="2em",
             padding_x="1em",
-            spacing="2em",
+            spacing="8",
             max_width="1200px",
             width="100%"
         )

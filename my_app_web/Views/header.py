@@ -38,24 +38,16 @@ def header() -> rx.Component:
                         as_="span",
                         text_align="center"
                     ),
-                    # rx.link(
-                    #     "CocinaMexicana2025",
-                    #     href=constants.RECETAS_COCINA_URL,
-                    #     is_external=True,
-                    #     color=TextColor.TERCIARY.value,
-                    #     padding_top=Size.BIG.value,
-                    #     font_size=Size.MEDIUM.value,
-                    #     text_align="center"
-                    # ),
+                    
                     align_items="start"
                 ),
                 flex_direction=styles.FLEX_DIRECTION,  # Para que la página sea responsive
                 align_items="center",
                 justify="center",
-                spacing=Size.DEFAULT.value,
+                spacing="0",
                 width="auto"
             ),
-            spacing=Size.BIG.value,
+            spacing="4",
             align_items="center",
             style={**styles.MAX_WIDTH_style, "margin": "0 auto"}
         ),

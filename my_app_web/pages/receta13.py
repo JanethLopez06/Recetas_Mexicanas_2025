@@ -1,7 +1,6 @@
 
 import reflex as rx
-import my_app_web.Styles.styles as styles
-from my_app_web.Styles.styles import TextColor, Size, FLEX_DIRECTION
+from my_app_web.Styles.styles import  Size, FLEX_DIRECTION
 
 def imagen_box():
     return rx.box(
@@ -27,7 +26,7 @@ def contenido_box():
     return rx.box(
         rx.text("El chile en nogada es un platillo típico de la gastronomía mexicana, originario de Puebla. Consiste en un chile poblano relleno de picadillo de carne de res y cerdo, bañado en una salsa de nuez y decorado con granada."),
 
-        rx.heading("Ingredientes:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Ingredientes:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("- 6 chiles poblanos."),
         rx.text("- 500 g de carne de res molida."),
         rx.text("- 500 g de carne de cerdo molida."),
@@ -42,7 +41,7 @@ def contenido_box():
         rx.text("- 1 granada."),
         rx.text("- Sal y pimienta al gusto."),
 
-        rx.heading("Preparación:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Preparación:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("1. Asa los chiles poblanos, quítales la piel, las semillas y las venas."),
         rx.text("2. Cocina las carnes con la cebolla, el ajo y los jitomates picados hasta que estén doradas."),
         rx.text("3. Agrega las almendras, pasas y acitrón, y cocina por 5 minutos más."),
@@ -50,7 +49,7 @@ def contenido_box():
         rx.text("5. Licúa las nueces con la crema y baña los chiles con esta salsa."),
         rx.text("6. Decora con granada y sirve caliente."),
 
-        rx.heading("Tabla nutricional", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Tabla nutricional", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.box(
             rx.html("""
                 <div class="nes-table-responsive" style="margin-top:1em;">
@@ -74,18 +73,18 @@ def contenido_box():
             margin_top="2em",
         ),
 
-        rx.heading("Información adicional:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Información adicional:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("⏱️ Tiempo de preparación: 30 minutos"),
         rx.text("🔥 Tiempo de cocción: 45 minutos"),
         rx.text("🍽️ Rinde para: 6 porciones"),
         rx.text("⭐ Dificultad: Media"),
 
-        rx.heading("Consejos de cocina:", margin_top="1.5em", font_size=Size.DEFAULT.value),
+        rx.heading("Consejos de cocina:", margin_top="2em", font_size=Size.DEFAULT.value),
         rx.text("✔️ Si no encuentras acitrón, puedes omitirlo o usar ciruelas pasas."),
         rx.text("✔️ Asegúrate de quitar completamente las semillas y venas de los chiles."),
         rx.text("✔️ Puedes servir los chiles con arroz blanco para acompañar."),
 
-        rx.heading("Acompañamientos sugeridos:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Acompañamientos sugeridos:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("🌶️ Salsa de molcajete"),
         rx.text("🥑 Guacamole"),
         rx.text("🍚 Arroz blanco"),
@@ -110,11 +109,11 @@ def contenido_box():
 
         rx.hstack(
             rx.html(
-                '<a href="/receta11" class="nes-btn is-primary" style="margin-left: 1em; padding: 1em 2em;">Anterior Receta</a>'),
+                '<a href="/receta12" class="nes-btn is-primary" style="margin-left: 1em; padding: 1em 2em;">Anterior Receta</a>'),
             rx.html(
                 '<a href="/" class="nes-btn is-success" style="padding: 1em 2em;">Menú Principal</a>'),
             rx.html(
-                '<a href="/receta13" class="nes-btn is-primary" style="margin-left: 1em; padding: 1em 2em;">Siguiente Receta</a>'),
+                '<a href="/receta14" class="nes-btn is-primary" style="margin-left: 1em; padding: 1em 2em;">Siguiente Receta</a>'),
             justify="center",
             margin_top="2em",
             width="100%",
@@ -132,7 +131,7 @@ def receta13() -> rx.Component:
         rx.vstack(
             rx.heading(
                 "Chiles en Nogada",
-                size="lg",
+                font_size=Size.MED.value,
                 text_align="center",
                 width="100%"
             ),
@@ -148,7 +147,7 @@ def receta13() -> rx.Component:
             ),
             padding_y="2em",
             padding_x="1em",
-            spacing="2em",
+            spacing="8",
             max_width="1200px",
             width="100%"
         )

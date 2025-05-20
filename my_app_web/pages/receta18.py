@@ -1,6 +1,5 @@
 import reflex as rx
-import my_app_web.Styles.styles as styles
-from my_app_web.Styles.styles import TextColor, Size, FLEX_DIRECTION
+from my_app_web.Styles.styles import  Size, FLEX_DIRECTION
 
 def imagen_box():
     return rx.box(
@@ -26,7 +25,7 @@ def contenido_box():
     return rx.box(
         rx.text("La carne asada a la mexicana es un platillo delicioso que combina carne de res marinada y asada, servida con cebollitas, chiles y salsa fresca."),
 
-        rx.heading("Ingredientes:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Ingredientes:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("- 1 kg de carne para asar (como arrachera o bistec)."),
         rx.text("- 2 cebollas medianas (cortadas en rodajas)."),
         rx.text("- 2 chiles serranos o jalapeños."),
@@ -35,13 +34,13 @@ def contenido_box():
         rx.text("- Sal y pimienta al gusto."),
         rx.text("- Aceite para asar."),
 
-        rx.heading("Preparación:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Preparación:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("1. Marinar la carne: Exprime el jugo de limón sobre la carne y sazona con sal y pimienta. Deja reposar por 15 minutos."),
         rx.text("2. Asar la carne: Cocina la carne en una parrilla o sartén caliente por 4-5 minutos de cada lado."),
         rx.text("3. Asar las cebollas y chiles: Coloca las rodajas de cebolla y los chiles sobre la parrilla y cocina hasta que estén dorados."),
         rx.text("4. Servir: Corta la carne en tiras y acompáñala con las cebollas y chiles asados. Decora con cilantro fresco y acompaña con tortillas."),
 
-        rx.heading("Tabla nutricional", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Tabla nutricional", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.box(
             rx.html("""
                 <div class="nes-table-responsive" style="margin-top:1em;">
@@ -65,18 +64,18 @@ def contenido_box():
             margin_top="2em",
         ),
 
-        rx.heading("Información adicional:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Información adicional:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("⏱️ Tiempo de preparación: 10 minutos"),
         rx.text("🔥 Tiempo de cocción: 15 minutos"),
         rx.text("🍽️ Rinde para: 4 porciones"),
         rx.text("⭐ Dificultad: Fácil"),
 
-        rx.heading("Consejos de cocina:", margin_top="1.5em", font_size=Size.DEFAULT.value),
+        rx.heading("Consejos de cocina:", margin_top="2em", font_size=Size.DEFAULT.value),
         rx.text("✔️ Puedes acompañar con arroz o frijoles."),
         rx.text("✔️ Si prefieres un sabor más picante, puedes agregar más chiles."),
         rx.text("✔️ Usa una parrilla para obtener un sabor ahumado delicioso."),
 
-        rx.heading("Acompañamientos sugeridos:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Acompañamientos sugeridos:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("🌶️ Salsa roja o verde"),
         rx.text("🥑 Guacamole"),
         rx.text("🍚 Arroz mexicano"),
@@ -123,7 +122,7 @@ def receta18() -> rx.Component:
         rx.vstack(
             rx.heading(
                 "Carne Asada a la Mexicana",
-                size="lg",
+                font_size=Size.MED.value,
                 text_align="center",
                 width="100%"
             ),
@@ -139,7 +138,7 @@ def receta18() -> rx.Component:
             ),
             padding_y="2em",
             padding_x="1em",
-            spacing="2em",
+            spacing="8",
             max_width="1200px",
             width="100%"
         )

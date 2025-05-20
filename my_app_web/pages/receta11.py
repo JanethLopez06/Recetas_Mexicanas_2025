@@ -1,6 +1,5 @@
 import reflex as rx
-import my_app_web.Styles.styles as styles
-from my_app_web.Styles.styles import TextColor, Size, FLEX_DIRECTION
+from my_app_web.Styles.styles import  Size, FLEX_DIRECTION
 
 
 def imagen_box():
@@ -27,7 +26,7 @@ def contenido_box():
     return rx.box(
         rx.text("Las enchiladas verdes son un platillo tradicional mexicano preparado con tortillas de maíz rellenas (generalmente de pollo), bañadas en salsa verde hecha con tomatillo y chile, y gratinadas con queso. Se sirven calientes y decoradas con crema, cebolla y cilantro."),
 
-        rx.heading("Ingredientes:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Ingredientes:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("- 12 tortillas de maíz"),
         rx.text("- 2 pechugas de pollo cocidas y desmenuzadas"),
         rx.text("- 500 g de tomatillo (verde)"),
@@ -40,7 +39,7 @@ def contenido_box():
         rx.text("- Aceite vegetal"),
         rx.text("- Sal al gusto"),
 
-        rx.heading("Preparación:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Preparación:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("1. Cocina los tomatillos, chiles, ajo y cebolla en agua hasta que estén suaves."),
         rx.text("2. Licúa con cilantro, sal y un poco del agua de cocción hasta obtener una salsa verde homogénea."),
         rx.text("3. Fríe ligeramente las tortillas en aceite caliente para suavizarlas."),
@@ -49,7 +48,7 @@ def contenido_box():
         rx.text("6. Hornea o gratina por 10 minutos o hasta que el queso se derrita."),
         rx.text("7. Sirve con crema, cebolla y cilantro por encima."),
 
-        rx.heading("Tabla nutricional", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Tabla nutricional", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.box(
             rx.html("""
                 <div class="nes-table-responsive" style="margin-top:1em;">
@@ -73,19 +72,19 @@ def contenido_box():
             margin_top="2em",
         ),
 
-        rx.heading("Información adicional:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Información adicional:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("⏱️ Tiempo de preparación: 25 minutos"),
         rx.text("🔥 Tiempo de cocción: 20 minutos"),
         rx.text("🍽️ Rinde para: 4 personas"),
         rx.text("⭐ Dificultad: Media"),
 
-        rx.heading("Consejos de cocina:", margin_top="1.5em", font_size=Size.DEFAULT.value),
+        rx.heading("Consejos de cocina:", margin_top="2em", font_size=Size.DEFAULT.value),
         rx.text("✔️ Puedes usar muslos de pollo si prefieres más sabor."),
         rx.text("✔️ Para una versión más ligera, evita freír las tortillas."),
         rx.text("✔️ Si quieres más cremosidad, añade un poco de crema a la salsa al licuar."),
         rx.text("✔️ Acompáñalas con arroz o frijoles refritos."),
 
-        rx.heading("Acompañamientos sugeridos:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Acompañamientos sugeridos:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("🍚 Arroz rojo o blanco"),
         rx.text("🥑 Guacamole o aguacate en rodajas"),
         rx.text("🥗 Ensalada fresca de lechuga"),
@@ -129,7 +128,7 @@ def receta11() -> rx.Component:
         rx.vstack(
             rx.heading(
                 "Enchiladas Verdes",
-                size="lg",
+                font_size=Size.MED.value,
                 text_align="center",
                 width="100%"
             ),
@@ -145,7 +144,7 @@ def receta11() -> rx.Component:
             ),
             padding_y="2em",
             padding_x="1em",
-            spacing="2em",
+            spacing="8",
             max_width="1200px",
             width="100%"
         )

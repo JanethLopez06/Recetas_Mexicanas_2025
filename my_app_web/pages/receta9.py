@@ -1,6 +1,5 @@
 import reflex as rx
-import my_app_web.Styles.styles as styles
-from my_app_web.Styles.styles import TextColor, Size, FLEX_DIRECTION
+from my_app_web.Styles.styles import  Size, FLEX_DIRECTION
 
 
 def imagen_box():
@@ -27,7 +26,7 @@ def contenido_box():
     return rx.box(
         rx.text("Las empanadas son una delicia tradicional mexicana elaborada con masa de maíz o trigo, rellenas con queso derretido o picadillo de carne bien sazonado. Se fríen hasta quedar doradas y crujientes, siendo perfectas como antojito, cena ligera o acompañamiento."),
 
-        rx.heading("Ingredientes:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Ingredientes:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("- 2 tazas de masa de maíz nixtamalizado"),
         rx.text("- 1/4 taza de agua"),
         rx.text("- 1 pizca de sal"),
@@ -39,14 +38,14 @@ def contenido_box():
         rx.text("- Sal y pimienta al gusto"),
         rx.text("- Aceite vegetal para freír"),
 
-        rx.heading("Preparación:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Preparación:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("1. Mezcla la masa con sal y agua hasta que esté suave y manejable."),
         rx.text("2. Para el picadillo: sofríe cebolla y ajo, añade carne, jitomate, sazona y cocina hasta que espese."),
         rx.text("3. Forma bolitas con la masa, aplánalas, coloca el relleno y sella los bordes."),
         rx.text("4. Fríe las empanadas en aceite caliente hasta que estén doradas."),
         rx.text("5. Escúrrelas sobre papel absorbente y sirve calientes."),
 
-        rx.heading("Tabla nutricional", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Tabla nutricional", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.box(
             rx.html("""
                 <div class="nes-table-responsive" style="margin-top:1em;">
@@ -67,22 +66,22 @@ def contenido_box():
             display="flex",
             justify_content="center",
             align_items="center",
-            margin_top="2em",
+            margin_top="4em",
         ),
 
-        rx.heading("Información adicional:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Información adicional:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("⏱️ Tiempo de preparación: 25 minutos"),
         rx.text("🔥 Tiempo de cocción: 15 minutos"),
         rx.text("🍽️ Rinde para: 6 empanadas medianas"),
         rx.text("⭐ Dificultad: Media"),
 
-        rx.heading("Consejos de cocina:", margin_top="1.5em", font_size=Size.DEFAULT.value),
+        rx.heading("Consejos de cocina:", margin_top="2em", font_size=Size.DEFAULT.value),
         rx.text("✔️ Usa un poco de harina de trigo en la masa para más crocancia."),
         rx.text("✔️ Puedes hornearlas a 200°C por 25 minutos si prefieres evitar frituras."),
         rx.text("✔️ Sella bien los bordes para que no se salga el relleno."),
         rx.text("✔️ El picadillo se puede preparar con anticipación y refrigerar."),
 
-        rx.heading("Acompañamientos sugeridos:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Acompañamientos sugeridos:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("🌶️ Salsa verde o roja casera"),
         rx.text("🥗 Ensalada de repollo con zanahoria"),
         rx.text("🥑 Guacamole"),
@@ -110,7 +109,7 @@ def contenido_box():
             rx.html('<a href="/" class="nes-btn is-success" style="padding: 1em 2em;">Menú Principal</a>'),
             rx.html('<a href="/receta10" class="nes-btn is-primary" style="margin-left: 1em; padding: 1em 2em;">Siguiente Receta</a>'),
             justify="center",
-            margin_top="2em",
+            margin_top="4em",
             width="100%",
             display="flex",
             flex_wrap="wrap",
@@ -126,7 +125,7 @@ def receta9() -> rx.Component:
         rx.vstack(
             rx.heading(
                 "Empanadas de Queso o Picadillo",
-                size="lg",
+                font_size=Size.MED.value,
                 text_align="center",
                 width="100%"
             ),
@@ -142,7 +141,7 @@ def receta9() -> rx.Component:
             ),
             padding_y="2em",
             padding_x="1em",
-            spacing="2em",
+            spacing="8",
             max_width="1200px",
             width="100%"
         )

@@ -1,6 +1,5 @@
 import reflex as rx
-import my_app_web.Styles.styles as styles
-from my_app_web.Styles.styles import TextColor, Size, FLEX_DIRECTION
+from my_app_web.Styles.styles import  Size, FLEX_DIRECTION
 
 def imagen_box():
     return rx.box(
@@ -25,19 +24,19 @@ def contenido_box():
     return rx.box(
         rx.text("Los plátanos fritos son un postre o acompañamiento tradicional, crujientes por fuera y suaves por dentro, perfectos para cualquier comida."),
 
-        rx.heading("Ingredientes:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Ingredientes:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("- 4 plátanos maduros."),
         rx.text("- Aceite vegetal para freír."),
         rx.text("- Canela en polvo (opcional)."),
         rx.text("- Azúcar al gusto (opcional)."),
 
-        rx.heading("Preparación:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Preparación:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("1. Pelar los plátanos y cortarlos en rodajas sesgadas o longitudinales."),
         rx.text("2. Calentar el aceite en una sartén a fuego medio-alto."),
         rx.text("3. Freír los plátanos hasta que estén dorados por ambos lados."),
         rx.text("4. Retirar del aceite y escurrir en papel absorbente. Espolvorear con canela y azúcar si se desea."),
 
-        rx.heading("Tabla nutricional", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Tabla nutricional", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.box(
             rx.html("""
                 <div class=\"nes-table-responsive\" style=\"margin-top:1em;\">
@@ -59,13 +58,13 @@ def contenido_box():
             margin_top="2em",
         ),
 
-        rx.heading("Información adicional:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Información adicional:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("⏱️ Tiempo de preparación: 10 minutos"),
         rx.text("🔥 Tiempo de cocción: 10 minutos"),
         rx.text("🍽️ Rinde para: 4 porciones"),
         rx.text("⭐ Dificultad: Muy fácil"),
 
-        rx.heading("Consejos de cocina:", margin_top="1.5em", font_size=Size.DEFAULT.value),
+        rx.heading("Consejos de cocina:", margin_top="2em", font_size=Size.DEFAULT.value),
         rx.text("✔️ Usa plátanos bien maduros para un sabor más dulce."),
         rx.text("✔️ Puedes acompañarlos con crema o queso rallado si los sirves como desayuno."),
         rx.text("✔️ También puedes hornearlos si prefieres una versión más ligera."),
@@ -93,7 +92,7 @@ def receta21() -> rx.Component:
         rx.vstack(
             rx.heading(
                 "Plátanos Fritos",
-                size="lg",
+                font_size=Size.MED.value,
                 text_align="center",
                 width="100%"
             ),
@@ -109,7 +108,7 @@ def receta21() -> rx.Component:
             ),
             padding_y="2em",
             padding_x="1em",
-            spacing="2em",
+            spacing="8",
             max_width="1200px",
             width="100%"
         )

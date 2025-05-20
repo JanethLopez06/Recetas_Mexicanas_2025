@@ -12,17 +12,19 @@ class Size(Enum):
     SMALL = "0.5em"
     MEDIUM = "0.8em"
     DEFAULT = "1em"
-    MED="1.5em"  #Para textos
+    MED = "1.5em"  # Para textos y para los títulos de las 24 recetas
     BIG = "2em"
     BUTTON = "2.75em"
-    VERY_BIG = "4em"
-    HUGE = "4.5em"         #  nueva opción más grande
+    VERY_BIG = "4em"   # mejor agregar unidad
+    HUGE = "4.5em"     
 
+class HeadingSize:
+    SMALL = "1"
+    MEDIUM = "3"
+    DEFAULT = "2"
+    BIG = "4"
+    HUGE = "6"
 
-# STYLESHEETS = [
-#     "https://unpkg.com/nes.css@latest/css/nes.min.css",
-#     "https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap"
-# ]
 
 STYLESHEETS = [
     "https://unpkg.com/nes.css@latest/css/nes.min.css",

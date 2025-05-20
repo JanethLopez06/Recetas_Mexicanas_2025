@@ -1,6 +1,5 @@
 import reflex as rx
-import my_app_web.Styles.styles as styles
-from my_app_web.Styles.styles import TextColor, Size, FLEX_DIRECTION
+from my_app_web.Styles.styles import  Size, FLEX_DIRECTION
 
 def imagen_box():
     return rx.box(
@@ -26,7 +25,7 @@ def contenido_box():
     return rx.box(
         rx.text("La tampiqueña es un platillo tradicional de la región de Tampico, Tamaulipas. Se compone de carne asada acompañada de una enchilada, frijoles, arroz y guacamole."),
 
-        rx.heading("Ingredientes:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Ingredientes:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("- 500 g de arrachera o carne para asar."),
         rx.text("- 2 enchiladas rojas."),
         rx.text("- 1/2 taza de frijoles refritos."),
@@ -37,14 +36,14 @@ def contenido_box():
         rx.text("- Jugo de 1 limón."),
         rx.text("- Sal y pimienta al gusto."),
 
-        rx.heading("Preparación:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Preparación:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("1. Marinar la carne: Sazona la carne con sal, pimienta y jugo de limón."),
         rx.text("2. Asar la carne: Cocina la carne en una parrilla caliente por 4-5 minutos de cada lado."),
         rx.text("3. Preparar las enchiladas: Fría las enchiladas y acompáñalas con frijoles y arroz."),
         rx.text("4. Hacer el guacamole: Machaca el aguacate con cebolla, chile serrano y jugo de limón."),
         rx.text("5. Servir: Sirve la carne junto con las enchiladas, frijoles, arroz y guacamole."),
 
-        rx.heading("Tabla nutricional", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Tabla nutricional", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.box(
             rx.html("""
                 <div class="nes-table-responsive" style="margin-top:1em;">
@@ -68,18 +67,18 @@ def contenido_box():
             margin_top="2em",
         ),
 
-        rx.heading("Información adicional:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Información adicional:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("⏱️ Tiempo de preparación: 15 minutos"),
         rx.text("🔥 Tiempo de cocción: 20 minutos"),
         rx.text("🍽️ Rinde para: 4 porciones"),
         rx.text("⭐ Dificultad: Media"),
 
-        rx.heading("Consejos de cocina:", margin_top="1.5em", font_size=Size.DEFAULT.value),
+        rx.heading("Consejos de cocina:", margin_top="2em", font_size=Size.DEFAULT.value),
         rx.text("✔️ Si prefieres carne más jugosa, puedes usar filete de res."),
         rx.text("✔️ Las enchiladas pueden ser de pollo o carne al gusto."),
         rx.text("✔️ Sirve con arroz y frijoles para un platillo completo."),
 
-        rx.heading("Acompañamientos sugeridos:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Acompañamientos sugeridos:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("🌶️ Salsa verde"),
         rx.text("🥑 Guacamole"),
         rx.text("🍚 Arroz blanco"),
@@ -126,7 +125,7 @@ def receta14() -> rx.Component:
         rx.vstack(
             rx.heading(
                 "Tampiqueña",
-                size="lg",
+                font_size=Size.MED.value,
                 text_align="center",
                 width="100%"
             ),
@@ -142,7 +141,7 @@ def receta14() -> rx.Component:
             ),
             padding_y="2em",
             padding_x="1em",
-            spacing="2em",
+            spacing="8",
             max_width="1200px",
             width="100%"
         )

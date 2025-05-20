@@ -1,7 +1,6 @@
 import reflex as rx
 
-import my_app_web.Styles.styles as styles
-from my_app_web.Styles.styles import TextColor, Size, FLEX_DIRECTION
+from my_app_web.Styles.styles import  Size, FLEX_DIRECTION
 
 
 def imagen_box():
@@ -10,7 +9,7 @@ def imagen_box():
             src="/recetas/pozole.png",
             alt="Pozole",
             width="100%",
-            max_width="300px",
+            max_width="200px",
             style={
                 "border": "4px solid #000",
                 "borderRadius": "8px",
@@ -28,7 +27,7 @@ def contenido_box():
     return rx.box(
         rx.text("Un platillo tradicional mexicano hecho con maíz cacahuazintle, carne de cerdo o pollo, y un caldo rojo condimentado con chiles. Se sirve con una variedad de acompañamientos frescos y crujientes."),
 
-        rx.heading("Ingredientes:", margin_top="2em",font_size=Size.DEFAULT.value),
+        rx.heading("Ingredientes:", margin_top="4em",font_size=Size.DEFAULT.value),
         rx.text("- 500 g de maíz pozolero precocido."),
         rx.text("- 500 g de carne de cerdo (espaldilla, pierna o costilla)."),
         rx.text("- 1/2 cebolla."),
@@ -38,7 +37,7 @@ def contenido_box():
         rx.text("- Agua suficiente."),
 
 
-        rx.heading("Preparación:", margin_top="2em",font_size=Size.DEFAULT.value),
+        rx.heading("Preparación:", margin_top="4em",font_size=Size.DEFAULT.value),
         rx.text("1. Cocina el maíz pozolero en una olla grande con agua hasta que reviente (aprox. 1 hora si es precocido)."),
         rx.text(
             "2. En otra olla, cocina la carne con ajo, cebolla y sal hasta que esté suave. Deshebra si lo prefieres."),
@@ -49,7 +48,7 @@ def contenido_box():
             "5. Sirve caliente y acompaña con los ingredientes frescos al gusto."),
     
 
-        rx.heading("Tabla nutricional (aproximado por porción):", margin_top="2em",font_size=Size.DEFAULT.value),
+        rx.heading("Tabla nutricional (aproximado por porción):", margin_top="4em",font_size=Size.DEFAULT.value),
         rx.box(
             rx.html("""
                 <div class="nes-table-responsive" style="margin-top:1em;">
@@ -73,19 +72,19 @@ def contenido_box():
             margin_top="2em",
         ),
 
-        rx.heading("Información adicional:", margin_top="2em",font_size=Size.DEFAULT.value),
+        rx.heading("Información adicional:", margin_top="4em",font_size=Size.DEFAULT.value),
         rx.text("⏱️ Tiempo de preparación: 30 minutos"),
         rx.text("🔥 Tiempo de cocción: 1.5 a 2 horas"),
         rx.text("🍽️ Rinde para: 6 porciones"),
         rx.text("⭐ Dificultad: Media"),
 
-        rx.heading("Consejos de cocina:", margin_top="1.5em",font_size=Size.DEFAULT.value),
+        rx.heading("Consejos de cocina:", margin_top="2em",font_size=Size.DEFAULT.value),
         rx.text("✔️ Usa maíz pozolero natural si quieres un sabor más auténtico (requiere remojar una noche antes)."),
         rx.text("✔️ Puedes sustituir el cerdo por pollo para una versión más ligera."),
         rx.text("✔️ No olvides espumar el caldo para que quede más claro y limpio."),
         rx.text("✔️ La salsa puede hacerse más o menos picante según los chiles que uses."),
 
-        rx.heading("Acompañamientos sugeridos:", margin_top="2em",font_size=Size.DEFAULT.value),
+        rx.heading("Acompañamientos sugeridos:", margin_top="4em",font_size=Size.DEFAULT.value),
         rx.text("🥬 Lechuga o repollo finamente picado."),
         rx.text("🔴 Rábanos en rodajas."),
         rx.text("🧅 Cebolla picada."),
@@ -137,8 +136,9 @@ def receta4() -> rx.Component:
         rx.vstack(
             rx.heading(
                 "Pozole Rojo Mexicano",
-                size="lg",
+                font_size=Size.MED.value,
                 text_align="center",
+                margin_top="1em",
                 width="100%"
             ),
             rx.box(
@@ -151,9 +151,9 @@ def receta4() -> rx.Component:
                 width="100%",
                 justify_content="center"
             ),
-            padding_y="2em",
+            padding_y="2",
             padding_x="1em",
-            spacing="2em",
+            spacing="8",
             max_width="1200px",
             width="100%"
         )

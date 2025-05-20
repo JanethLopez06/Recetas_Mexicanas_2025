@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>http://localhost:3000/</loc><lastmod>2025-05-20T08:35:45.194Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/receta1/</loc><lastmod>2025-05-20T08:35:45.196Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/receta10/</loc><lastmod>2025-05-20T08:35:45.196Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/receta11/</loc><lastmod>2025-05-20T08:35:45.196Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/receta12/</loc><lastmod>2025-05-20T08:35:45.196Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/receta13/</loc><lastmod>2025-05-20T08:35:45.196Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/receta14/</loc><lastmod>2025-05-20T08:35:45.196Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/receta15/</loc><lastmod>2025-05-20T08:35:45.196Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/receta16/</loc><lastmod>2025-05-20T08:35:45.196Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/receta17/</loc><lastmod>2025-05-20T08:35:45.196Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/receta18/</loc><lastmod>2025-05-20T08:35:45.196Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/receta19/</loc><lastmod>2025-05-20T08:35:45.196Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/receta2/</loc><lastmod>2025-05-20T08:35:45.196Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/receta20/</loc><lastmod>2025-05-20T08:35:45.196Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/receta21/</loc><lastmod>2025-05-20T08:35:45.196Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/receta22/</loc><lastmod>2025-05-20T08:35:45.196Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/receta23/</loc><lastmod>2025-05-20T08:35:45.196Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/receta24/</loc><lastmod>2025-05-20T08:35:45.196Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/receta3/</loc><lastmod>2025-05-20T08:35:45.196Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/receta4/</loc><lastmod>2025-05-20T08:35:45.196Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/receta5/</loc><lastmod>2025-05-20T08:35:45.196Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/receta6/</loc><lastmod>2025-05-20T08:35:45.196Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/receta7/</loc><lastmod>2025-05-20T08:35:45.196Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/receta8/</loc><lastmod>2025-05-20T08:35:45.196Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:3000/receta9/</loc><lastmod>2025-05-20T08:35:45.196Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+</urlset>

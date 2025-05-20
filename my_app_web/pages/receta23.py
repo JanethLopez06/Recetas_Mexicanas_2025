@@ -1,6 +1,5 @@
 import reflex as rx
-import my_app_web.Styles.styles as styles
-from my_app_web.Styles.styles import TextColor, Size, FLEX_DIRECTION
+from my_app_web.Styles.styles import  Size, FLEX_DIRECTION
 
 def imagen_box():
     return rx.box(
@@ -25,7 +24,7 @@ def contenido_box():
     return rx.box(
         rx.text("Los buñuelos son un postre tradicional crujiente y espolvoreado con azúcar y canela, muy popular en celebraciones navideñas en México."),
 
-        rx.heading("Ingredientes:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Ingredientes:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("- 2 tazas de harina de trigo."),
         rx.text("- 1 huevo."),
         rx.text("- 1/4 taza de mantequilla derretida."),
@@ -34,14 +33,14 @@ def contenido_box():
         rx.text("- Aceite para freír."),
         rx.text("- Azúcar y canela para espolvorear."),
 
-        rx.heading("Preparación:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Preparación:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("1. Mezclar la harina, sal, huevo, mantequilla y agua hasta formar una masa suave."),
         rx.text("2. Amasar y dejar reposar la masa tapada por 30 minutos."),
         rx.text("3. Dividir la masa en porciones, extender en forma de discos delgados."),
         rx.text("4. Freír los discos en aceite caliente hasta que estén dorados y crujientes."),
         rx.text("5. Escurrir en papel absorbente y espolvorear con azúcar y canela."),
 
-        rx.heading("Tabla nutricional", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Tabla nutricional", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.box(
             rx.html("""
                 <div class=\"nes-table-responsive\" style=\"margin-top:1em;\">
@@ -63,13 +62,13 @@ def contenido_box():
             margin_top="2em",
         ),
 
-        rx.heading("Información adicional:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Información adicional:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("⏱️ Tiempo de preparación: 20 minutos"),
         rx.text("🔥 Tiempo de cocción: 10 minutos"),
         rx.text("🍽️ Rinde para: 6 porciones"),
         rx.text("⭐ Dificultad: Media"),
 
-        rx.heading("Consejos de cocina:", margin_top="1.5em", font_size=Size.DEFAULT.value),
+        rx.heading("Consejos de cocina:", margin_top="2em", font_size=Size.DEFAULT.value),
         rx.text("✔️ Puedes agregar ralladura de naranja a la masa para un toque especial."),
         rx.text("✔️ Asegúrate de que el aceite esté bien caliente antes de freír."),
         rx.text("✔️ Espolvorea el azúcar y canela mientras los buñuelos estén calientes para que se adhiera mejor."),
@@ -97,7 +96,7 @@ def receta23() -> rx.Component:
         rx.vstack(
             rx.heading(
                 "Buñuelos",
-                size="lg",
+                font_size=Size.MED.value,
                 text_align="center",
                 width="100%"
             ),
@@ -113,7 +112,7 @@ def receta23() -> rx.Component:
             ),
             padding_y="2em",
             padding_x="1em",
-            spacing="2em",
+            spacing="8",
             max_width="1200px",
             width="100%"
         )

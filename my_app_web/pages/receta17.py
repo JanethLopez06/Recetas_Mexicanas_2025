@@ -1,6 +1,5 @@
 import reflex as rx
-import my_app_web.Styles.styles as styles
-from my_app_web.Styles.styles import TextColor, Size, FLEX_DIRECTION
+from my_app_web.Styles.styles import  Size, FLEX_DIRECTION
 
 
 def imagen_box():
@@ -27,7 +26,7 @@ def contenido_box():
     return rx.box(
         rx.text("El pollo en salsa verde es un platillo tradicional mexicano, ideal para acompañar con arroz o tortillas. Su sabor fresco y ligero lo hace perfecto para cualquier ocasión."),
 
-        rx.heading("Ingredientes:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Ingredientes:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("- 4 piezas de pollo (piernas, muslos o pechugas)."),
         rx.text("- 4 tomates verdes (tomates de cáscara)."),
         rx.text("- 2 chiles serranos."),
@@ -38,13 +37,13 @@ def contenido_box():
         rx.text("- Sal y pimienta al gusto."),
         rx.text("- 1 taza de caldo de pollo."),
 
-        rx.heading("Preparación:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Preparación:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("1. Preparar la salsa: Hervir los tomates verdes, los chiles serranos, la cebolla y el ajo hasta que estén suaves. Licúa todo con el cilantro y un poco de caldo de pollo."),
         rx.text("2. Cocinar el pollo: En una sartén grande, calienta el aceite y fríe las piezas de pollo hasta que estén doradas por todos lados."),
         rx.text("3. Añadir la salsa: Vierte la salsa verde sobre el pollo, cubre con el resto del caldo de pollo y cocina a fuego lento durante 20 minutos."),
         rx.text("4. Servir: Sirve el pollo con la salsa verde, acompañándolo con arroz, frijoles o tortillas."),
 
-        rx.heading("Tabla nutricional", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Tabla nutricional", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.box(
             rx.html("""
                 <div class="nes-table-responsive" style="margin-top:1em;">
@@ -68,18 +67,18 @@ def contenido_box():
             margin_top="2em",
         ),
 
-        rx.heading("Información adicional:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Información adicional:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("⏱️ Tiempo de preparación: 15 minutos"),
         rx.text("🔥 Tiempo de cocción: 30 minutos"),
         rx.text("🍽️ Rinde para: 4 porciones"),
         rx.text("⭐ Dificultad: Fácil"),
 
-        rx.heading("Consejos de cocina:", margin_top="1.5em", font_size=Size.DEFAULT.value),
+        rx.heading("Consejos de cocina:", margin_top="2em", font_size=Size.DEFAULT.value),
         rx.text("✔️ Puedes añadir un poco de crema al final para un toque cremoso."),
         rx.text("✔️ Si prefieres un toque más picante, agrega más chiles serranos."),
         rx.text("✔️ Acompáñalo con papas fritas o una ensalada fresca."),
 
-        rx.heading("Acompañamientos sugeridos:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Acompañamientos sugeridos:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("🍚 Arroz mexicano"),
         rx.text("🌮 Tacos de pollo"),
         rx.text("🥑 Guacamole"),
@@ -126,7 +125,7 @@ def receta17() -> rx.Component:
         rx.vstack(
             rx.heading(
                 "Pollo en Salsa Verde",
-                size="lg",
+                font_size=Size.MED.value,
                 text_align="center",
                 width="100%"
             ),
@@ -142,7 +141,7 @@ def receta17() -> rx.Component:
             ),
             padding_y="2em",
             padding_x="1em",
-            spacing="2em",
+            spacing="8",
             max_width="1200px",
             width="100%"
         )

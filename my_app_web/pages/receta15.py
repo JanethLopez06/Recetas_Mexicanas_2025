@@ -1,6 +1,5 @@
 import reflex as rx
-import my_app_web.Styles.styles as styles
-from my_app_web.Styles.styles import TextColor, Size, FLEX_DIRECTION
+from my_app_web.Styles.styles import  Size, FLEX_DIRECTION
 
 def imagen_box():
     return rx.box(
@@ -26,7 +25,7 @@ def contenido_box():
     return rx.box(
         rx.text("El pescado a la veracruzana es un platillo típico de la región del Golfo de México, preparado con pescado fresco, tomate, aceitunas y alcaparras."),
 
-        rx.heading("Ingredientes:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Ingredientes:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("- 4 filetes de pescado (como huachinango o robalo)."),
         rx.text("- 2 tomates grandes (picados)."),
         rx.text("- 1/4 de taza de aceitunas verdes o negras."),
@@ -38,13 +37,13 @@ def contenido_box():
         rx.text("- 2 cucharadas de aceite de oliva."),
         rx.text("- Sal y pimienta al gusto."),
 
-        rx.heading("Preparación:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Preparación:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("1. Preparar la salsa: En una sartén, calienta el aceite y sofríe la cebolla, el ajo y los tomates hasta que estén suaves."),
         rx.text("2. Agregar el caldo: Vierte el caldo de pescado, las aceitunas, las alcaparras y el jugo de limón. Cocina a fuego lento durante 10 minutos."),
         rx.text("3. Cocinar el pescado: Coloca los filetes de pescado en la sartén, cubre con la salsa y cocina durante 5-7 minutos por cada lado."),
         rx.text("4. Servir: Sirve el pescado con la salsa veracruzana sobre él y acompáñalo con arroz o ensalada."),
 
-        rx.heading("Tabla nutricional", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Tabla nutricional", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.box(
             rx.html("""
                 <div class="nes-table-responsive" style="margin-top:1em;">
@@ -68,18 +67,18 @@ def contenido_box():
             margin_top="2em",
         ),
 
-        rx.heading("Información adicional:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Información adicional:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("⏱️ Tiempo de preparación: 10 minutos"),
         rx.text("🔥 Tiempo de cocción: 15 minutos"),
         rx.text("🍽️ Rinde para: 4 porciones"),
         rx.text("⭐ Dificultad: Fácil"),
 
-        rx.heading("Consejos de cocina:", margin_top="1.5em", font_size=Size.DEFAULT.value),
+        rx.heading("Consejos de cocina:", margin_top="2em", font_size=Size.DEFAULT.value),
         rx.text("✔️ Puedes acompañarlo con arroz o papas fritas."),
         rx.text("✔️ Si no tienes caldo de pescado, puedes usar caldo de pollo."),
         rx.text("✔️ Sirve con rodajas de aguacate y salsa picante."),
 
-        rx.heading("Acompañamientos sugeridos:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Acompañamientos sugeridos:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("🌶️ Salsa roja o verde"),
         rx.text("🥑 Guacamole"),
         rx.text("🍚 Arroz blanco o a la mexicana"),
@@ -126,7 +125,7 @@ def receta15() -> rx.Component:
         rx.vstack(
             rx.heading(
                 "Pescado a la Veracruzana",
-                size="lg",
+                font_size=Size.MED.value,
                 text_align="center",
                 width="100%"
             ),
@@ -142,7 +141,7 @@ def receta15() -> rx.Component:
             ),
             padding_y="2em",
             padding_x="1em",
-            spacing="2em",
+            spacing="8",
             max_width="1200px",
             width="100%"
         )

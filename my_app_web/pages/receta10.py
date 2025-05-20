@@ -1,8 +1,7 @@
 # my_app_web/pages/receta10.py
 
 import reflex as rx
-import my_app_web.Styles.styles as styles
-from my_app_web.Styles.styles import TextColor, Size, FLEX_DIRECTION
+from my_app_web.Styles.styles import  Size, FLEX_DIRECTION
 
 
 def imagen_box():
@@ -29,7 +28,7 @@ def contenido_box():
     return rx.box(
         rx.text("Los pambazos son un antojito mexicano típico, preparado con un pan suave bañado en salsa de chile guajillo, relleno con papas y chorizo, y frito ligeramente para darles una textura crujiente por fuera y suave por dentro. Se acompañan con lechuga, crema, queso y salsa."),
 
-        rx.heading("Ingredientes:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Ingredientes:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("- 4 panes para pambazo (o teleras suaves)"),
         rx.text("- 3 papas medianas, cocidas y en cubos"),
         rx.text("- 200 g de chorizo"),
@@ -40,7 +39,7 @@ def contenido_box():
         rx.text("- Aceite vegetal para freír"),
         rx.text("- Lechuga picada, crema, queso rallado y salsa al gusto para acompañar"),
 
-        rx.heading("Preparación:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Preparación:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("1. Licúa los chiles guajillo con ajo, cebolla, un poco de agua y sal hasta formar una salsa."),
         rx.text("2. Cocina el chorizo, añade las papas y sofríe todo junto hasta integrar bien."),
         rx.text("3. Corta los panes a la mitad sin separarlos completamente."),
@@ -48,7 +47,7 @@ def contenido_box():
         rx.text("5. Rellena con la mezcla de papa y chorizo."),
         rx.text("6. Decora con lechuga, crema, queso y salsa al gusto."),
 
-        rx.heading("Tabla nutricional", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Tabla nutricional", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.box(
             rx.html("""
                 <div class="nes-table-responsive" style="margin-top:1em;">
@@ -72,19 +71,19 @@ def contenido_box():
             margin_top="2em",
         ),
 
-        rx.heading("Información adicional:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Información adicional:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("⏱️ Tiempo de preparación: 30 minutos"),
         rx.text("🔥 Tiempo de cocción: 20 minutos"),
         rx.text("🍽️ Rinde para: 4 pambazos"),
         rx.text("⭐ Dificultad: Media"),
 
-        rx.heading("Consejos de cocina:", margin_top="1.5em", font_size=Size.DEFAULT.value),
+        rx.heading("Consejos de cocina:", margin_top="2em", font_size=Size.DEFAULT.value),
         rx.text("✔️ Puedes usar pan de telera si no encuentras pan de pambazo."),
         rx.text("✔️ Si no deseas freír, puedes calentar los pambazos en sartén sin aceite."),
         rx.text("✔️ Agrega un poco de chipotle a la salsa si prefieres un toque más picante."),
         rx.text("✔️ También se pueden rellenar con frijoles y queso para una opción vegetariana."),
 
-        rx.heading("Acompañamientos sugeridos:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Acompañamientos sugeridos:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("🥤 Agua de tamarindo o jamaica"),
         rx.text("🌶️ Salsa roja casera"),
         rx.text("🥗 Ensalada fresca de nopales"),
@@ -127,7 +126,7 @@ def receta10() -> rx.Component:
         rx.vstack(
             rx.heading(
                 "Pambazos",
-                size="lg",
+                font_size=Size.MED.value,
                 text_align="center",
                 width="100%"
             ),
@@ -143,7 +142,7 @@ def receta10() -> rx.Component:
             ),
             padding_y="2em",
             padding_x="1em",
-            spacing="2em",
+            spacing="8",
             max_width="1200px",
             width="100%"
         )

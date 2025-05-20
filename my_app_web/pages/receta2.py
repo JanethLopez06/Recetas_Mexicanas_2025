@@ -1,7 +1,5 @@
 import reflex as rx
-
-import my_app_web.Styles.styles as styles
-from my_app_web.Styles.styles import TextColor, Size, FLEX_DIRECTION
+from my_app_web.Styles.styles import  Size, FLEX_DIRECTION
 
 
 def imagen_box():
@@ -28,7 +26,7 @@ def contenido_box():
     return rx.box(
         rx.text("Crujientes tacos de tortilla rellenos con un suave puré de papa sazonado, fritos hasta dorar y acompañados de lechuga, crema, queso y salsa. Una receta económica, deliciosa y muy popular en la cocina mexicana."),
 
-        rx.heading("Ingredientes:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Ingredientes:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("- 4 papas medianas peladas"),
         rx.text("- 12 tortillas de maíz"),
         rx.text("- 1/4 de cebolla picada finamente"),
@@ -37,7 +35,7 @@ def contenido_box():
         rx.text("- Sal al gusto"),
         rx.text("- Crema, queso fresco rallado y salsa al gusto"),
 
-        rx.heading("Preparación:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Preparación:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("1. Hierve las papas hasta que estén suaves."),
         rx.text("2. Escúrrelas y aplástalas con un tenedor; añade cebolla picada y sal al gusto."),
         rx.text("3. Calienta ligeramente las tortillas para que se doblen sin romperse."),
@@ -45,7 +43,7 @@ def contenido_box():
         rx.text("5. Fríe los tacos en aceite caliente hasta que estén dorados y crujientes."),
         rx.text("6. Escúrrelos en papel absorbente y sirve con lechuga, crema, queso y salsa. "),
 
-        rx.heading("Tabla nutricional (por porción -3 tacos):", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Tabla nutricional (por porción -3 tacos):", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.box(
             rx.html("""
                 <div class="nes-table-responsive" style="margin-top:1em;">
@@ -69,17 +67,17 @@ def contenido_box():
             margin_top="2em",
         ),
 
-        rx.heading("Información adicional:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Información adicional:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text("⏱️ Tiempo de preparación: 25 minutos"),
         rx.text("🍽️ Rinde para: 4 porciones"),
         rx.text("⭐ Dificultad: Fácil"),
 
-        rx.heading("Consejos de cocina:", margin_top="1.5em", font_size=Size.DEFAULT.value),
+        rx.heading("Consejos de cocina:", margin_top="2em", font_size=Size.DEFAULT.value),
         rx.text("✔️ Usa tortillas del día anterior para evitar que se rompan al doblarlas."),
         rx.text("✔️ Si prefieres una opción más saludable, puedes hornearlos en lugar de freírlos."),
         rx.text("✔️ Añade un poco de ajo en polvo o pimienta al puré para más sabor."),
 
-        rx.heading("Acompañamientos sugeridos:", margin_top="2em", font_size=Size.DEFAULT.value),
+        rx.heading("Acompañamientos sugeridos:", margin_top="4em", font_size=Size.DEFAULT.value),
         rx.text(" Agua de horchata o jamaica bien fría"),
         rx.text("Arroz rojo mexicano"),
         rx.text("Salsa verde casera"),
@@ -125,7 +123,7 @@ def receta2() -> rx.Component:
         rx.vstack(
             rx.heading(
                 "Tacos Dorados de Papa",
-                size="lg",
+                font_size=Size.MED.value,
                 text_align="center",
                 width="100%"
             ),
@@ -141,7 +139,7 @@ def receta2() -> rx.Component:
             ),
             padding_y="2em",
             padding_x="1em",
-            spacing="2em",
+            spacing="8",
             max_width="1200px",
             width="100%"
         )
