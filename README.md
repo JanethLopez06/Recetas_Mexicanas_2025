@@ -6,7 +6,7 @@ Disfruta de una colección de recetas tradicionales con estilo retro, explicadas
 ---
 
 ## 🌐 Demo en línea
-👉 Haz clic aquí para ver la app en Vercel
+👉 sazonmexicano.vercel.app
 
 ---
 
